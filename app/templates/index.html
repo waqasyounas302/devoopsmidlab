@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 420px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .title {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btn-primary {
+            width: 100%;
+        }
+
+        .link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card p-4 bg-white">
+
+    <h3 class="title mb-4">🎓 Student Portal</h3>
+
+    <form action="/search" method="POST">
+
+        <div class="mb-3">
+            <label class="form-label">Registration Number</label>
+            <input type="text" name="reg_no" class="form-control"
+                   placeholder="Enter Registration Number" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            🔍 Search Student
+        </button>
+
+    </form>
+
+    <a href="/add" class="link">
+        ➕ Add New Student
+    </a>
+
+</div>
+
+</body>
+</html>
